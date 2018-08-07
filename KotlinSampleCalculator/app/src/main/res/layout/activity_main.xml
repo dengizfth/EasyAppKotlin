@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/secondTextInput"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Second Number"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstTextInput" />
+
+    <EditText
+        android:id="@+id/firstTextInput"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="first Number"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/subButton"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="sub"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/simplyButton"
+        app:layout_constraintTop_toTopOf="@+id/simplyButton" />
+
+    <Button
+        android:id="@+id/divButton"
+        android:layout_width="61dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginTop="20dp"
+        android:onClick="div"
+        android:text="/"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondTextInput" />
+
+    <Button
+        android:id="@+id/simplyButton"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="simply"
+        android:text="*"
+        app:layout_constraintEnd_toStartOf="@+id/divButton"
+        app:layout_constraintTop_toTopOf="@+id/divButton" />
+
+    <Button
+        android:id="@+id/sumButton"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="12dp"
+        android:onClick="sum"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/subButton"
+        app:layout_constraintTop_toTopOf="@+id/subButton" />
+
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="304dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginTop="40dp"
+        android:text="Sonuc/Result"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divButton" />
+</android.support.constraint.ConstraintLayout>
